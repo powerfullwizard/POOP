@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+<div class="contenedor">
+
+    <button class="boton1" style="left:50px; top:50px;" onclick="reproducir('audio1')"><img src="IMG/SKELETONRIGHTHAND.gif"></button>
+     <button class="boton1" style="left:200px; top:50px;" onclick="reproducir('audio2')">CANCIÓN 1</button>
+    <button class="boton1" style="left:350px; top:50px;" onclick="reproducir('audio3')">PARAR LOOP</button>
+    <button class="boton1" style="left:500px; top:50px;" onclick="reproducir('audio4')">Botón 4</button>
+        <button class="boton1" style="left:650px; top:50px;" onclick="reproducir('audio5')">Botón 5</button>
+
+    <button class="boton1" style="left:50px; top:150px;" onclick="reproducir('audio6')">Botón 6</button>
+    <button class="boton1" style="left:200px; top:150px;" onclick="reproducir('audio7')">Botón 7</button>
+    <button class="boton1" style="left:350px; top:150px;" onclick="reproducir('audio8')">Botón 8</button>
+     <button class="boton1" style="left:500px; top:150px;" onclick="reproducir('audio9')">Botón 9</button>
+    <button class="boton1" style="left:650px; top:150px;" onclick="reproducir('audio10')">Botón 10</button>
+
+
+</div>
+
+
+
+
+    <center>
+ <nav class="NAV1">
+<p>VACIO</p>
+<img class="IMAGE" src="IMG/phantom of the paradise shower.gif">
+ </nav>
+ </center>
+ 
+
+<center>
+<nav class="NAV2">
+  <marquee direction="LEFT"><img src="IMG/SKELETONRIGHTHAND.gif">BIENVENIDO</marquee>
+  <BR>
+      <img class="IMAGE" src="IMG/phantom.webp"> <img class="IMAGE" src="IMG/phantom.webp"><img class="IMAGE" src="IMG/phantom.webp"><img class="IMAGE" src="IMG/phantom.webp">
+ </nav>
+</center>
+
+<br>
+
+<center>
+<nav class="NAV3">
+  <p><span style="color: rgb(255, 251, 0)">
+    105/40/1655
+    </span>
+  </p>
+  <br>
+  <img class="IMAGE" src="IMG/phantom of the paradise shower.gif">
+  <br>
+   <img class="IMAGE" src="IMG/phantom of the paradise shower.gif">
+ </nav>
+</center>
+
+<BR>
+<center>
+ <nav class="NAV4">
+  <p>
+   
+  </p>
+  <img class="IMAGE" src="IMG/FACESWITCH.gif">
+  <br>
+    <nav class="NAVYT">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+<div class="video-container">
+    <video id="videoPlayer" controls autoplay>
+      <source src="IMG/Twisted Sister - I Wanna Rock.mp4" type="video/mp4">
+    </video>
+
+    <button class="button2" id="nextBtn">SIGUIENTE</button>
+  </div>
+
+
+    </nav>
+ </nav>
+ </center>
+
+
+
+ <script>
+    // Lista de videos MP4
+    const videos = [
+      "IMG/Twisted Sister - I Wanna Rock.mp4",
+      "IMG/Quiet Riot - Bang Your Head (Metal Health).mp4",
+      "IMG/Judas Priest - Breaking The Law (Official Music Video).mp4",
+      "IMG/Rush - Tom Sawyer.mp4",
+      "IMG/Faust from Phantom of the Paradise.mp4",
+      "IMG/Paul Williams - Hell of It.mp4",
+      "IMG/Phantom Of The Paradise - Life At Last (Ray Kennedy).mp4",
+      "video8.mp4"
+    ];
+
+    let currentVideo = 0;
+
+    const player = document.getElementById("videoPlayer");
+    const nextBtn = document.getElementById("nextBtn");
+
+    nextBtn.addEventListener("click", () => {
+
+      // Avanza al siguiente video
+      currentVideo++;
+
+      // Si llega al final vuelve al primero
+      if (currentVideo >= videos.length) {
+        currentVideo = 0;
+      }
+
+      // Cambia el video
+      player.src = videos[currentVideo];
+
+      // Reproduce automáticamente
+      player.play();
+    });
+  </script>
+
+
+
+
+<audio id="audio1" src="IMG/press these other bu.mp3" loop></audio>
+<audio id="audio2" src="IMG/Black Sabbath - Zero The Hero (Official Audio).mp3" loop></audio>
+<audio id="audio3" src="" loop></audio>
+<audio id="audio4" src="IMG/Phantom of the Opera (2015 Remaster).mp3" loop></audio>
+<audio id="audio5" src="IMG/Quiet Riot - Come On Feel The Noise.mp3" loop></audio>
+ <audio id="audio6" src="IMG/Rush - Tom Sawyer.mp3" loop></audio>
+<audio id="audio7" src="IMG/Queen-Bohemian Rhapsody (Only the hard rock part).mp3" loop></audio>
+<audio id="audio8" src="audio8.mp3" loop></audio>
+<audio id="audio9" src="audio9.mp3" loop></audio>
+<audio id="audio10" src="audio10.mp3" loop></audio>
+
+
+
+<script>
+function reproducir(id){
+
+    // detener todos
+    document.querySelectorAll("audio").forEach(audio=>{
+        audio.pause();
+        audio.currentTime = 0;
+    });
+
+    // reproducir el elegido
+    let audio = document.getElementById(id);
+    audio.play();
+}
+</script>
+
+<br>
+
+<center>
+<nav class="NAV5">
+  <p><span style="color: rgb(255, 251, 0)">
+    HOLA
+    </span>
+  </p>
+<div id="pagina">
+
+
+  <div id="media"> <img src="IMG/SCARYSKELETONSINAFART.jpg"></div>
+
+  <div id="texto">MI TEXTO</div>
+
+  <div id="opciones">OPCIÓN</div>
+
+</div>  
+
+
+
+
+<script>
+
+// 1. ESCENAS (FUERA, GLOBAL)
+const escenas = {
+  1: {
+    titulo: "Inicio",
+    texto: "ESTAS EN LA PUERTA DE UN CASTILLO.",
+    media: "IMG/OPENDOOR.GIF",
+    tipo: "imagen",
+    audio: "audio.mp3",
+    opciones: [
+      { texto: "NO ENTRAR", siguiente: 2 },  { texto: "ENTRAR", siguiente: 3 },
+    ]
+  },
+
+  2: {
+    titulo: "Luz encendida",
+    texto: "ESTAS AFUERA DE EL CASTILLO",
+    media: "IMG/HAUNTEDCASTLE.gif",
+    tipo: "imagen",
+    audio: "IMG/THUNDER.mp3",
+    opciones: [
+      { texto: "ENTRAR", siguiente: 3 },  { texto: "CAMINAR POR FUERA", siguiente: 6 }
+    ]
+  },
+
+  3: {
+    titulo: "",
+    texto: "ESTAS DENTRO DE EL CASTILLO",
+    media: "IMG/CASTLEINSIDE.jpg",
+    tipo: "imagen",
+    audio: "IMG/JEOPARDY.mp3",
+    opciones: [
+          { texto: "SALIR", siguiente: 2 }, { texto: "SUBIR ESCALERA", siguiente: 5 }, { texto: "IR A HABITACIÓN OSCURA", siguiente: 8 }
+    ]
+  },
+  4: {
+    titulo: "NO SÉ",
+    texto: ".",
+    media: "video.mp4",
+    tipo: "video",
+    opciones: [
+          { texto: "Continuar", siguiente: 1 }
+    ]
+  },
+   5: {
+    titulo: "DRACULA",
+    texto: "EN LA HABITACIÓN ENCONTRASTE UN ATAUD.",
+    media: "IMG/emptycasket.gif",
+    tipo: "imagen",
+    audio: "IMG/",
+    opciones: [
+          { texto: "Continuar", siguiente: 9 }
+    ]
+  },
+   6: {
+    titulo: "LAGO1",
+    texto: "ESTAS EN UN LAGO, Y VES A UNA HERMOSA MUJER BAÑANDOSE DENTRO.",
+    media: "IMG/HAUNTEDLAKE.gif",
+    tipo: "imagen",
+      audio: "IMG/HORRORSOUND.mp3",
+    opciones: [
+          { texto: "IR CON ELLA", siguiente: 7 }, { texto: "IGNORARLA Y VOLVER", siguiente: 2 }
+    ]
+    },
+   7: {
+    titulo: "LAGO1",
+    texto: "LA MUJER SE CONVIERTE EN ZOMBIE Y COME TU CEREBRO.",
+    media: "IMG/JANE.gif",
+    tipo: "imagen",
+      audio: "IMG/HORRORSOUND.mp3",
+    opciones: [
+          { texto: "JUGAR DE NUEVO", siguiente: 1 }
+    ]
+     },
+   9: {
+    titulo: "DRACULA",
+    texto: "ENCONTRASTE A DRACULA.",
+    media: "IMG/DRACULA COFFIN.GIF",
+    tipo: "imagen",
+      audio: "IMG/Dramatic Organ Sound.mp3",
+    opciones: [
+          { texto: "HABLAR CON DRACULA", siguiente: 10 }
+    ]
+  }
+};
+
+// 2. CONTROL
+let escenaActual = 1;
+
+// 3. MOTOR
+function cargarEscena(num) {
+  const p = escenas[num];
+
+  if (!p) {
+    document.getElementById("texto").innerText = "Escena no existe";
+    return;
+  }
+
+  escenaActual = num;
+
+  // TEXTO
+  document.getElementById("texto").innerText = p.texto;
+
+  // MEDIA
+  const mediaDiv = document.getElementById("media");
+  mediaDiv.innerHTML = "";
+
+  if (p.tipo === "imagen") {
+    mediaDiv.innerHTML = `<img src="${p.media}">`;
+  }
+
+  if (p.tipo === "video") {
+    mediaDiv.innerHTML = `
+      <video autoplay loop controls>
+        <source src="${p.media}">
+      </video>
+    `;
+  }
+
+  // AUDIO
+  if (p.audio) {
+    let audio = document.getElementById("audio");
+
+    if (!audio) {
+      audio = document.createElement("audio");
+      audio.id = "audio";
+      document.body.appendChild(audio);
+    }
+
+    audio.src = p.audio;
+    audio.play();
+  }
+
+  // BOTONES
+  const opcionesDiv = document.getElementById("opciones");
+  opcionesDiv.innerHTML = "";
+
+  p.opciones.forEach(op => {
+    const btn = document.createElement("button");
+    btn.innerText = op.texto;
+    btn.onclick = () => cargarEscena(op.siguiente);
+    opcionesDiv.appendChild(btn);
+  });
+}
+
+// 4. INICIAR
+cargarEscena(1);
+
+</script>
+
+
+
+ </nav>
+</center>
+
+
+<script>
+function detenerTodo(actual = null){
+
+    // Pausar audios
+    document.querySelectorAll("audio").forEach(audio => {
+
+        if(audio !== actual){
+            audio.pause();
+            audio.currentTime = 0;
+        }
+
+    });
+
+    // Pausar videos
+    document.querySelectorAll("video").forEach(video => {
+
+        if(video !== actual){
+            video.pause();
+        }
+
+    });
+}
+
+// =========================
+// ACTIVAR CONTROL AUTOMATICO
+// =========================
+document.addEventListener("play", function(e){
+
+    detenerTodo(e.target);
+
+}, true);
+
+</script>
+</body>
+</html>

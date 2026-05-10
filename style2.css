@@ -1,0 +1,286 @@
+body {
+    background-color: black;
+   }
+body {
+    color: rgb(255, 0, 0);
+    Font-family: 'Times New Roman', serif;
+    cursor:url("IMG/BLOODYBRAINCURSOR.gif"), auto;
+  }
+  .NAV1 {
+     background-image: url(IMG/WINSLOWLEACH.gif);
+    background-repeat: repeat;
+        background-size: 120px;
+    width: 600px; 
+    z-index: 11; 
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    border-style: groove;
+    border-color: #1100ff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  }
+.NAV2 {
+    background-image: url(IMG/STARTS2BACKGROUND.gif);
+    background-repeat: repeat;
+        background-size: 120px;
+    width: 600px; 
+    z-index: 11; 
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    border-style: groove;
+    border-color: #1100ff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  }
+
+  .IMAGE {
+    width: 130px;
+  }
+   .IMAGE2 {
+    width: 330px;
+  }
+
+
+  .NAV3 {
+    background-image: url(IMG/REDBACKGROUND.jpg);
+    background-repeat: repeat;
+        background-size: 120px;
+    width: 600px;
+    height: 300px; 
+    z-index: 11; 
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    border-style: groove;
+    border-color: #1100ff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+
+  }
+
+
+  .NAV4 {
+    background-image: url(IMG/STARTS2BACKGROUND.gif);
+    background-repeat: repeat;
+        background-size: 120px;
+        background-color: #000000;
+    width: 600px; 
+    z-index: 11; 
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    border-style: groove;
+    border-color: #1100ff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+       display: flex;
+  justify-content: center;
+  }
+
+
+
+.NAV5 {
+background-color: #000;
+    width: 600px;
+    height: 550px; 
+    z-index: 11; 
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    border-style: groove;
+    border-color: #1100ff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+
+  }
+
+
+
+.NAVYT {
+    background-image: url(IMG/YTREPRODUCER.jpg);
+        background-size: cover;
+    width: 400px;
+    height: 320px; 
+    z-index: 12; 
+    box-shadow: 2px 2px 4px rgb(0, 0, 0);
+    border-style: groove;
+    border-color: #1100ff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+      display: flex;
+    justify-content: center;
+    align-items: center;
+            a,
+button,
+input,
+select,
+textarea,
+[onclick]{
+    cursor:url("IMG/BLOODYEYECURSOR.gif"), pointer;
+}
+    
+    }
+
+   .contenedor{
+         a,
+button,
+input,
+select,
+textarea,
+[onclick]{
+    cursor:url("IMG/BLOODYEYECURSOR.gif"), pointer;
+}
+        width:100%;
+        height:100%;
+         display: flex;
+         justify-content: center;
+    }
+
+  
+    .boton1{
+
+       border-style: groove;
+    border-color: #bd0000;
+     text-shadow: 1px 1px 2px rgb(0, 0, 0);
+       
+        width:120px;
+        height:60px;
+        background:#000000;
+        background-image: url(IMG/CUSTOMBUTTON.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+        color:rgb(0, 0, 0);
+        cursor:pointer;
+    }
+
+    .boton1:hover{
+      color: white;
+  background: linear-gradient(
+    to bottom,
+    #e40000 0%,
+    #290000 45%,
+    #e60000 100%);
+        transform:scale(1.05);
+    }
+
+
+
+    video {
+      width: 330px;
+      height: 190px;
+    }
+ 
+
+    .video-container {
+    width: 330px;
+     transform: translateY(19px);
+    }
+
+
+    .button2 {
+       font-family: 'Times New Roman', serif;
+  width: 100px;
+  height: 20px;
+
+  font-size: 10px;
+  color: rgb(255, 221, 221);
+
+  background: linear-gradient(
+    to bottom,
+      #d80000 0%,
+    #240000 45%,
+    #b40000 100%
+  );
+
+  border-top: 1px solid #3f0000;
+  border-left: 1px solid  #360000;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000;
+
+  border-radius: 8px;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 0, 0, 0.25),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.904),
+    0 0 8px rgba(0, 0, 0, 0.801);
+
+  cursor: pointer;
+    }
+
+    .button2:hover {
+       font-family: 'Times New Roman', serif;
+  width: 101px;
+  height: 21px;
+
+  font-size: 10px;
+  color: rgb(255, 221, 221);
+
+  background: linear-gradient(
+    to bottom,
+      #d80000 0%,
+    #240000 45%,
+    #b40000 100%
+  );
+
+  border-top: 1px solid #3f0000;
+  border-left: 1px solid  #360000;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000;
+
+  border-radius: 8px;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 0, 0, 0.25),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.904),
+    0 0 8px rgba(0, 0, 0, 0.801);
+
+  cursor: pointer;
+    }
+
+
+
+
+#pagina {
+  max-width: 500px;
+  margin: auto;
+}
+
+#media {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  background: black;
+}
+
+#media img,
+#media video {
+ width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#texto {
+  margin: 23px;
+}
+
+button {
+    font-size: 15px;
+
+     text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        font-family: 'Times New Roman', serif;
+        width:120px;
+        height:60px;
+        background:#000000;
+        background-image: url(IMG/CUSTOMBUTTON2.gif);
+         background-repeat: no-repeat;
+         background-size: cover;
+        color:rgb(255, 255, 255);
+        cursor:pointer;
+}
+
+button:hover {
+  font-size: 15px;
+
+     text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        font-family: 'Times New Roman', serif;
+        width:121px;
+        height:61px;
+        background:#000000;
+        background-image: url(IMG/CUSTOMBUTTON2.gif);
+         background-repeat: no-repeat;
+         background-size: cover;
+        color:rgb(255, 255, 255);
+        cursor:pointer;
+}
